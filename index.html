@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./asset/index.css">
+  <link rel="stylesheet" href="./asset/responsive.css">
+  <link rel="stylesheet" href="./asset/fonts/fontawesome-free-5.15.2-web/fontawesome-free-5.15.2-web/css/all.css" />
+</head>
+
+<body>
+  <div class="app">
+    <header>
+      <div class="grid wide">
+        <div class="header">
+          <div class="header__logo">
+            <img src="./asset/img/logo.png" alt="" class="header__img">
+            <label for="header__logo-input" class="header__logo-check"><i class="fas fa-bars"></i></label>
+          </div>
+          <input type="checkbox" hidden id="header__logo-input">
+          <label for="header__logo-input" class="header__logo-dis"></label>
+          <ul class="header__list">
+            <label for="header__logo-input" class="header__list-time"><i class="far fa-times-circle"></i></label>
+            <li class="header__list-item"><a href="">HOME</a></li>
+            <li class="header__list-item"><a href="">PACKAGES</a>
+              <ul id="appear" class="header__list--wrap">
+                <li class="header__list--wrap-item hot"><a href="">Search 1</a></li>
+                <li class="header__list--wrap-item"><a href="">Search 2</a></li>
+                <li class="header__list--wrap-item arrow"><a href="">Tour Packages</a>
+                  <ul class="header__list--wrap move-right">
+                    <li class="header__list--wrap-item best "><a href="">Carousel</a></li>
+                    <li class="header__list--wrap-item"><a href="">Custom Map</a></li>
+                    <li class="header__list--wrap-item"><a href="">360 Panorama</a>
+                    <li class="header__list--wrap-item "><a href="">Default</a>
+                  </ul>
+                </li>
+                <li class="header__list--wrap-item"><a href="">Destination</a></li>
+                <li class="header__list--wrap-item"><a href="">Typology</a></li>
+              </ul>
+            </li>
+            <li class="header__list-item"><a href="">SHOP</a>
+              <ul id="appear" class="header__list--wrap">
+                <li class="header__list--wrap-item"><a href="">Archive</a></li>
+                <li class="header__list--wrap-item"><a href="">Single Product</a></li>
+                <li class="header__list--wrap-item"><a href="">Cart</a>
+                <li class="header__list--wrap-item "><a href="">Checkout</a>
+              </ul>
+            </li>
+            <li class="header__list-item"><a href="">ABOUT US</a>
+              <ul id="appear" class="header__list--wrap">
+                <li class="header__list--wrap-item new "><a href="">About us</a></li>
+                <li class="header__list--wrap-item"><a href="">About us 2</a></li>
+                <li class="header__list--wrap-item"><a href="">About us 3</a>
+              </ul>
+            </li>
+            <li class="header__list-item"><a href="">PAGES</a>
+              <ul id="appear" class="header__list--wrap">
+                <li class="header__list--wrap-item"><a href="">Services</a></li>
+                <li class="header__list--wrap-item"><a href="">Agency Tours</a></li>
+                <li class="header__list--wrap-item"><a href="">Testimonials</a>
+                <li class="header__list--wrap-item"><a href="">Prices</a></li>
+                <li class="header__list--wrap-item"><a href="">Promotions</a></li>
+                <li class="header__list--wrap-item"><a href="">Faq</a>
+                <li class="header__list--wrap-item"><a href="">Coming Soon</a></li>
+                <li class="header__list--wrap-item arrow"><a href="">About Us</a>
+                  <ul class="header__list--wrap move-right">
+                    <li class="header__list--wrap-item "><a href="">About Us 1</a></li>
+                    <li class="header__list--wrap-item"><a href="">About Us 2</a></li>
+                    <li class="header__list--wrap-item"><a href="">About Us 3</a>
+                  </ul>
+                </li>
+                <li class="header__list--wrap-item arrow"><a href="">Contact</a>
+                  <ul class="header__list--wrap move-right">
+                    <li class="header__list--wrap-item  "><a href="">Contact 1</a></li>
+                    <li class="header__list--wrap-item"><a href="">Contact 2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="header__list-item"><a href="">NEWS</a>
+              <ul id="appear" class="header__list--wrap">
+                <li class="header__list--wrap-item"><a href="">Archive</a></li>
+                <li class="header__list--wrap-item arrow"><a href="">Single Post</a>
+                  <ul class="header__list--wrap move-right">
+                    <li class="header__list--wrap-item"><a href="">Full Width</a></li>
+                    <li class="header__list--wrap-item"><a href="">Right Sidebar</a></li>
+                    <li class="header__list--wrap-item"><a href="">Left Sidebar</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="header__list-item"><a href="">CONTACT</a>
+              <ul id="appear" class="header__list--wrap">
+                <li class="header__list--wrap-item"><a href="">Contact 1</a></li>
+                <li class="header__list--wrap-item"><a href="">Contact 2</a></li>
+              </ul>
+            </li>
+            <li class="header__list-item"><a href="" class="btn">BOOK NOW</a></li>
+          </ul>
+
+        </div>
+      </div>
+      <div class="header__slide">
+        <input type="checkbox" hidden id="header__slide-input">
+        <div class="header__slide-img">
+          <img src="./asset/img/slide.jpg" alt="" class="header__img--size">
+          <img src="./asset/img/slide-1.jpg" alt="" class="header__img--size2">
+          <div class="header__slide--list">
+            <label for="header__slide-input" class="header__slide--list-moveLeft"><i
+                class="fas fa-chevron-left"></i></label>
+            <label for="header__slide-input" class="header__slide--list-moveRight"><i
+                class="fas fa-chevron-right"></i></label>
+          </div>
+          <div class="header__slide--list-item">
+            <h1>Enjoy <span>Your</span> Holiday</h1>
+            <h2>With Our <span>Agency</span></h2>
+            <div class="header__slide--list-info">
+              <i class="fas fa-star"></i><span class="header__slide--detail"> SPECTACULAR THING TO DO <br> BEST PLACES
+                TO SEE</span>
+            </div>
+            <div class="header__slide--list-info">
+              <i class="fas fa-star"></i><span class="header__slide--detail">LOCAL GUIDE AVAILABLE</span>
+            </div>
+            <div class="header__slide--list-info">
+              <i class="fas fa-star"></i><span class="header__slide--detail">ALL INCLUSIVE FAMILY HOLIDAY <br>FOR ALL
+                SEASON</span>
+            </div>
+          </div>
+          <div class="header__slide--list-btn">
+            <a href="">BOOK THE TOUR</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <body>
+      <div class="grid wide">
+        <div class="app__body">
+          <div class="row grid-padding">
+            <div class="c-8">
+              <div class="app__body-header">
+                <p>WALK TOUR AND SUGWAY</p>
+                <h3>The Paris <span class="underline">Experience</span> !</h3>
+              </div>
+              <div class="app__body-between">
+                <div class="app__body-between-info">
+                  <span>Lorem ipsum dolor sit amet, consect etur adip iscing elit. Proin rhoncus urn a dictum neque
+                    molestie
+                    ultricies.</span>
+                </div>
+                <div class="app__body-between-info">
+                  <span>Lorem ipsum dolor sit amet, consect etur adip iscing elit. Proin rhoncus urn a dictum neque
+                    molestie
+                    ultricies.</span>
+                </div>
+              </div>
+              <div class="app__body-footer">
+                <a href="">VIEW ALL PACKAGES</a>
+              </div>
+            </div>
+            <div class="c-4">
+              <img src="./asset/img/silde 2.jpg" alt="" class="app__body-img">
+              <div class="app__body-start">
+                <li><i class="far fa-play-circle"></i></li>
+              </div>
+            </div>
+          </div>
+          <div class="app__wrap">
+            <div class="row grid-padding">
+              <div class="app__wrap-list">
+                <div class="c-2">
+                  <a href=""><img src="./asset/img/silde 2.jpg" alt="" class="app__wrap-img"></a>
+                  <a href="" class="app__wrap-price1">700 $</a>
+                </div>
+                <div class="c-2">
+                  <a href=""><img src="./asset/img/slide 3.jpg" alt="" class="app__wrap-img"></a>
+                  <a href="" class="app__wrap-price2">500 $</a>
+                </div>
+                <div class="c-2">
+                  <a href=""><img src="./asset/img/slide 4.jpg" alt="" class="app__wrap-img"></a>
+                  <a href="" class="app__wrap-price3">400 $</a>
+                </div>
+                <div class="c-2">
+                  <a href=""><img src="./asset/img/slide 5.jpg" alt="" class="app__wrap-img"></a>
+                  <a href="" class="app__wrap-price4">1200 $</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="app__service">
+        <div class="grid wide">
+          <div class="row">
+            <div class="app__service-list">
+              <div class="app__service-title">
+                <p>MULTIPLE BENEFITS INCLUDED</p>
+                <h3>OUR <span class="underline">SERVICES</span></h3>
+              </div>
+              <div class="app__service-items">
+                <div class="c-4">
+                  <div class="app__service-info">
+                    <div class="app__service-icon"><img src="./asset/img/icon 1.png" alt="" class="app__service-img">
+                    </div>
+                    <div class="app__service-detail">
+                      <span>Insurance</span>
+                      <p>Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
+                      <a href="" class="btn1">View More</a>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="c-4">
+                  <div class="app__service-info">
+                    <div class="app__service-icon"><img src="./asset/img/icon 2.png" alt="" class="app__service-img">
+                    </div>
+                    <div class="app__service-detail">
+                      <span>Medical Care</span>
+                      <p>Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
+                      <a href="" class="btn2">View More</a>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="c-4">
+                  <div class="app__service-info">
+                    <div class="app__service-icon"><img src="./asset/img/icon 3.png" alt="" class="app__service-img">
+                    </div>
+                    <div class="app__service-detail">
+                      <span>Meals Included</span>
+                      <p>Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
+                      <a href="" class="btn3">View More</a>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="c-4">
+                  <div class="app__service-info">
+                    <div class="app__service-icon"><img src="./asset/img/icon 4.png" alt="" class="app__service-img">
+                    </div>
+                    <div class="app__service-detail">
+                      <span>Accessibility</span>
+                      <p>Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
+                      <a href="" class="btn4">View More</a>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="c-4">
+                  <div class="app__service-info">
+                    <div class="app__service-icon"><img src="./asset/img/icon 5.png" alt="" class="app__service-img">
+                    </div>
+                    <div class="app__service-detail">
+                      <span>Customer Care</span>
+                      <p>Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
+                      <a href="" class="btn5">View More</a>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="c-4">
+                  <div class="app__service-info">
+                    <div class="app__service-icon"><img src="./asset/img/icon 6.png" alt="" class="app__service-img">
+                    </div>
+                    <div class="app__service-detail">
+                      <span>Shuttle Included</span>
+                      <p>Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
+                      <a href="" class="btn6">View More</a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app__calender">
+        <div class="grid wide">
+          <div class="row">
+            <div class="app__calender-list">
+              <div class="c-4 balance">
+                <div class="app__calender-list-info">
+                  <div class="app__calender-list-title">
+                    <p>LAST MINUTE !</p>
+                    <h3>Summer <span class="underline3">SALE</span></h3>
+                  </div>
+                  <div class="app__calender-list-item">
+                    <div class="app__calender-time">
+                      <span>000 <br> DAYS</span>
+                      <span>00 <br> HOURS</span>
+                    </div>
+                    <div class="app__calender-time">
+                      <span>00 <br> MINUTES</span>
+                      <span>00 <br> SECONDS</span>
+                    </div>
+                  </div>
+                  <div class="app__calender-btn">
+                    <a href="">CHECK NOW</a>
+                  </div>
+                </div>
+              </div>
+              <div class="c-4 balance ">
+                <div class="app__calender-list-info2 border">
+                  <div><img src="./asset/img/slide 7.jpg" alt="" class="app__calender-img">
+                    <div class="app__calender-logo-size">
+                      <img src="./asset/img/logo 2.png" alt="" class="app__calender-logo">
+                    </div>
+                  </div>
+                  <div class="app__calender-list-detail">
+                    <div class="app__calender-list-area">
+                      <span>Berlin</span>
+                      <p><i class="fas fa-map-marker-alt"></i>Europe</p>
+                    </div>
+                    <div class="app__calender-list-between">
+                      <div class="app__calender-list-left">
+                        <span>CULTURAL</span>
+                        <p>RELAX <a href="" class="bonus"> + 1 </a></p>
+                      </div>
+                      <div class="app__calender-list-right">
+                        <span class="app__calender-list-right-price">700 $</span>
+                      </div>
+                    </div>
+                    <div class="app__calender-list-footer">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus
+                        dictum scelerisque.</p>
+                      <a href="" class="detail">DETAILS</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c-4 balance ">
+                <div class="app__calender-list-info2 border">
+                  <div><img src="./asset/img/slide 6.jpg" alt="" class="app__calender-img">
+                    <div class="app__calender-img-note">SALE</div>
+                    <div class="app__calender-logo-size2">
+                      <img src="./asset/img/logo 3.png" alt="" class="app__calender-logo2">
+                    </div>
+                  </div>
+                  <div class="app__calender-list-detail">
+                    <div class="app__calender-list-area">
+                      <span>HONG KONG</span>
+                      <p><i class="fas fa-map-marker-alt"></i>Asia</p>
+                    </div>
+                    <div class="app__calender-list-between">
+                      <div class="app__calender-list-left">
+                        <span>HISTORY</span>
+                        <p>CULTURAL <a href="" class="bonus2"> + 1 </a></p>
+                      </div>
+                      <div class="app__calender-list-right">
+                        <span class="app__calender-list-right-under">1000</span> 500 $
+                      </div>
+                    </div>
+                    <div class="app__calender-list-footer">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus
+                        dictum
+                        scelerisque.</p>
+                      <a href="" class="detail2">DETAILS</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app__reviews">
+        <div class="grid wide">
+          <div class="row">
+            <div class="c-1">
+              <div class="app__reviews-title">
+                <p>FROM THE BLOG</p>
+                <h3>ARTICLES & <span class="underline4">NEWS</span></h3>
+              </div>
+            </div>
+            <div class="c-6 balance-review">
+              <div class="app__reviews-list">
+                <img src="./asset/img/re-1.jpg" alt="" class="app__reviews-img">
+                <div class="app__reviews-list-info">
+                  <div class="app__reviews-list-title">
+                    <p class="black">OUR NEWS</p>
+                    <h3>Travel Events</h3>
+                  </div>
+                  <div class="app__reviews-list-detail">
+                    <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod
+                      orci ut et lobortis.</p>
+                  </div>
+                  <div class="app__reviews-list-btn">
+                    <a href="">READ MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c-6 balance-review">
+              <div class="app__reviews-list ">
+                <img src="./asset/img/re-2.jpg" alt="" class="app__reviews-img">
+                <div class="app__reviews-list-info background-color1">
+                  <div class="app__reviews-list-title">
+                    <p class="white">TRAVEL TIPS</p>
+                    <h3 class="white">New Routes</h3>
+                  </div>
+                  <div class="app__reviews-list-detail white">
+                    <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod
+                      orci ut et
+                      lobortis.</p>
+                  </div>
+                  <div class="app__reviews-list-btn">
+                    <a href="" class="btn3">READ MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c-6 balance-review">
+              <div class="app__reviews-list  change-img">
+                <img src="./asset/img/re-3.jpg" alt="" class="app__reviews-img">
+                <div class="app__reviews-list-info background-color2">
+                  <div class="app__reviews-list-title">
+                    <p class="white">OUR NEWS</p>
+                    <h3 class="white">Best Beaches</h3>
+                  </div>
+                  <div class="app__reviews-list-detail white">
+                    <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod
+                      orci ut et
+                      lobortis.</p>
+                  </div>
+                  <div class="app__reviews-list-btn">
+                    <a href="" class="btn4">READ MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="c-6 balance-review">
+              <div class="app__reviews-list change-img">
+                <img src="./asset/img/re-4.jpg" alt="" class="app__reviews-img">
+                <div class="app__reviews-list-info">
+                  <div class="app__reviews-list-title">
+                    <p class="black">TRAVEL TIPS</p>
+                    <h3>Love Travel</h3>
+                  </div>
+                  <div class="app__reviews-list-detail">
+                    <p>Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod
+                      orci ut et
+                      lobortis.</p>
+                  </div>
+                  <div class="app__reviews-list-btn">
+                    <a href="" class="btn5">READ MORE</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="app__footer">
+        <div class="grid wide">
+          <div class="app__footer-img"><img src="./asset/img/silde 2.jpg" alt="" class="app__footer-img-size"></div>
+          <div class="row ">
+            <div class="app__footer-contain">
+              <div class="app__footer-list">
+                <div class="c-6 footer-padding">
+                  <div class="app__footer-logo"><img src="./asset/img/logo.png" alt=""></div>
+                  <div class="app__footer-info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut diam et nibh condimentum
+                      venenatis eu ac
+                      magnasin.
+                      Quisque interdum est mauris, eget ullamcorper.</p>
+                  </div>
+                  <div class="app__footer-social">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-vimeo-v"></i>
+                  </div>
+                </div>
+                <div class="c-6 footer-padding change-padding">
+                  <div class="app__footer-detail row row2">
+                    <div class="c-4">
+                      <div class="app__footer-item">
+                        <div class="app__footer-item-title">
+                          <h3>OUR AGENCY</h3>
+                        </div>
+                        <div class="app__footer-item-end">
+                          <div class="app__footer-item-end-info"><i class="fas fa-angle-right"></i><span>
+                              Services</span></div>
+                          <div class="app__footer-item-end-info"><i class="fas fa-angle-right"></i><span>
+                              Insurancee</span></div>
+                          <div class="app__footer-item-end-info"><i class="fas fa-angle-right"></i><span> Agency</span>
+                          </div>
+                          <div class="app__footer-item-end-info"><i class="fas fa-angle-right"></i><span> Tourism</span>
+                          </div>
+                          <div class="app__footer-item-end-info"><i class="fas fa-angle-right"></i><span> Payment</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="c-4">
+                      <div class="app__footer-item">
+                        <div class="app__footer-item-title">
+                          <h3>OUR AGENCY</h3>
+                        </div>
+                        <div class="app__footer-item-end">
+                          <div class="app__footer-item-end-info"><i class="fas fa-angle-right"></i><span>
+                              Services</span></div>
+                          <div class="app__footer-item-end-info"><i class="fas fa-angle-right"></i><span>
+                              Insurancee</span></div>
+                          <div class="app__footer-item-end-info"><i class="fas fa-angle-right"></i><span> Agency</span>
+                          </div>
+                          <div class="app__footer-item-end-info"><i class="fas fa-angle-right"></i><span> Tourism</span>
+                          </div>
+                          <div class="app__footer-item-end-info"><i class="fas fa-angle-right"></i><span> Payment</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="c-4">
+                      <div class="app__footer-item">
+                        <div class="app__footer-item-title">
+                          <h3>OUR AGENCY</h3>
+                        </div>
+                        <div class="app__footer-item-end">
+                          <div class="app__footer-item-end-info"><i class="fas fa-angle-right"></i><span>
+                              Services</span></div>
+                          <div class="app__footer-item-end-info"><i class="fas fa-angle-right"></i><span>
+                              Insurancee</span></div>
+                          <div class="app__footer-item-end-info"><i class="fas fa-angle-right"></i><span> Agency</span>
+                          </div>
+                          <div class="app__footer-item-end-info"><i class="fas fa-angle-right"></i><span> Tourism</span>
+                          </div>
+                          <div class="app__footer-item-end-info"><i class="fas fa-angle-right"></i><span> Payment</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="app__footer-end ">
+
+                  <div class="app__footer-end-info">
+                    <span>THE BEST WORDPRESS TRAVEL THEME</span>
+                  </div>
+                  <div class="app__footer-end-info ">
+                    <span>COPYRIGHT NICDARK THEMES 2018</span>
+                  </div>
+
+                </div>
+                <div class="app__footer--scroll">
+                  <div class="app__footer-scroll-logo">
+                    <span class="app__footer-logo-top">BUY NOW</span>
+                    <a href="" class="app__footer-logo-between">
+                      <span><i class="fas fa-dollar-sign"></i></span>
+                      <span>54</span>
+                    </a>
+                  </div>
+                  <div class="app__footer-scroll-logo2">
+                    <a href="">
+                      <i class="fas fa-fire"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+  </div>
+</body>
+</div>
+</body>
+
+</html>
